@@ -1,0 +1,181 @@
+
+@font-face {
+  font-family: 'Muli';
+  src: url(../font/Muli-Medium.ttf);
+}
+
+
+body {
+  overflow-x: hidden;
+  font-family: Muli;
+}
+
+a {
+  color: #D8001C;
+}
+
+a:hover {
+  color: #D8001C;
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+.font-12{
+  font-size: 12px;
+}
+.font-20{
+  font-size: 20px !important;
+}
+.font-24{
+  font-size: 24px !important;
+}
+.clr-red{
+  color: #D8001C;
+}
+.clr-white{
+  color: #FFF;
+}
+.clr-black{
+  color:#000;
+}
+.clr-grey{
+  color:#a2a2a2;
+}
+.clr-green{
+  color: #00D85C;
+}
+.bg-red{
+  background-color: #D8001C;
+}
+.bg-white{
+  background-color: #FFF;
+}
+.pt100{
+  padding-top: 100px;
+}
+::-moz-selection {
+  background: #D8001C;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #D8001C;
+  color: #FFF;
+  text-shadow: none;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+.logo{
+  width: 130px;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #D8001C;
+  border: 1px solid #D8001C;
+  background-color: #FFF;
+}
+
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #D8001C;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: #6d6b6b;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #D8001C;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px #0000002e;
+
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1em 2.5em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+.required-field{
+  color: red;
+}
+@media (max-width: 991px){
+  .text-right{
+    text-align: left !important;
+  }
+  .mobile-hide{
+    display: none;
+  }
+}
+
+@media (min-width: 992px){
+  .modal-dialog {
+    max-width: 80%;
+    margin: 1.75rem auto;
+  }
+}
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+
+#lblCartCount {
+  font-size: 12px;
+  background: #00D85C;
+  color: #fff;
+  padding: 2px 5px;
+  vertical-align: top;
+  margin-left: -10px; 
+}
+.filter-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

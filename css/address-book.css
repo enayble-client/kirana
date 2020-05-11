@@ -1,0 +1,38 @@
+.address-box{
+	box-shadow: 0px 0px 6px #00000038;
+	border-radius: 4px;
+}
+.custom-control-input:checked~.custom-control-label::before {
+	color: #FFF;
+	border-color: #d6dce2;
+	background-color: #abafb3;
+}
+.custom-control-label::after,.custom-control-label::before{
+	top: 4.25rem;
+}
+.btn-address{
+	background-color: #00E235;
+	color: #FFF;
+	width: 100%;
+	font-size:18px;
+	font-weight: bold;
+}
+.btn-address:hover{
+	background-color: #00E235;
+	color: #FFF;
+	width: 100%;
+	font-weight: bold;
+}
+.btn-editaddress{
+	color: #585858;
+	width: 100%;
+	font-size:18px;
+	font-weight: bold;
+	border: 1px solid #585858;
+}
+
+@media (max-width: 991px){
+	.btn-address,.btn-editaddress{
+		font-size: 24px;
+	}
+}
