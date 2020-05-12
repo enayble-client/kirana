@@ -286,6 +286,11 @@ sup {
 	border: 1px solid #D8001C;
 	color: #D8001C;
 }
+.btn-done:hover{
+	border: 1px solid #D8001C;
+	background-color: #D8001C;
+	color: #FFF;
+}
 .green-add-cart{
 	background-color: #00E235;
 	color: #FFF;
@@ -361,4 +366,18 @@ input[type=number] {
 	font-weight:bold;
 	font-size:15px;
 	padding-top: 3px;
+}
+
+
+.filter-button label input {
+	position:absolute;
+	display: none;
+	cursor: pointer;
+}
+
+.filter-button input:checked + span {
+	background-color: #D8001C;
+	border-radius: 3px;
+	color:#FFF;
+	font-size: 12px;
 }
