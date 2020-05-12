@@ -4,6 +4,7 @@
 .cat-box{
 	box-shadow: 0px 0px 6px #00000038;
 	border-radius: 10px;
+	height: 160px;
 }
 .cat-title{
 	color: #D8001C;
