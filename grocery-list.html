@@ -671,14 +671,23 @@
                     <i class="fa fa-chevron-down"></i>
                   </div>
 
-                  <div class="col-6 d-flex mb-3">
-                    <a href="javascript:decrement()" class="pt-2">
+                  <div class="col-6 mb-3">
+                    <!-- <a href="javascript:decrement()" class="pt-2">
                       <i class="fa fa-minus clr-grey font-20 pr-2" aria-hidden="true"></i>
                     </a>
                     <input type="number" id="count" class="form-control qty-count" value="1" min="1" required="">
                     <a href="javascript:increment()" class="pl-2 pt-2">
                       <i class="fa fa-plus clr-grey font-20 " aria-hidden="true"></i>
-                    </a>
+                    </a> -->
+                    <div class="input-group h45" >
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary bg-red" onclick="decrement('count2')" type="button"><i class="fa fa-minus clr-white"></i></button>
+                      </div>
+                      <input type="number" id="count2" class="form-control h45" value="1" min="1" required="">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-green" onclick="increment('count2')" type="button"><i class="fa fa-plus clr-white"></i></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -719,11 +728,11 @@
   });
 </script>
 <script>
-  function increment() {
-    document.getElementById("count").stepUp(1);
+  function increment(id) {
+    document.getElementById(id).stepUp(1);
   }
   function decrement() {
-    document.getElementById("count").stepDown(1);
+    document.getElementById(id).stepDown(1);
   }
 
   function added() {

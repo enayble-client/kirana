@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Customer Registration Page | Kirana</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/customer-register.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" class="img-fluid logo">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-3 bg-red filter-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="text-uppercase text-center clr-white">register as a customer</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1 register-box py-4 px-5">
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="name">Customer Name <span class="required-field">*</span></label>
+                  <input type="text" class="form-control" placeholder="Enter Your Full Name" id="name" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="name">Pincode <span class="required-field">*</span></label>
+                  <input type="tel" class="form-control" placeholder="Enter Pincode" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="country">Country <span class="required-field">*</span></label>
+                  <select class="form-control" id="country" required="">
+                    <option disabled selected value="">Please Select Your Country</option>
+                    <option>India</option>
+                    <option>China</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="state">State <span class="required-field">*</span></label>
+                  <select class="form-control" id="state" required="">
+                    <option disabled selected value="">Please Select Your State</option>
+                    <option>Maharashtra</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="district">District <span class="required-field">*</span></label>
+                  <select class="form-control" id="district" required="">
+                    <option disabled selected value="">Please Select Your District</option>
+                    <option>Pune</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="tehsil">Tehsil <span class="required-field">*</span></label>
+                  <select class="form-control" id="tehsil" required="">
+                    <option disabled selected value="">Please Select Your Tehsil</option>
+                    <option>Pune</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="city">City <span class="required-field">*</span></label>
+                  <select class="form-control" id="city" required="">
+                    <option disabled selected value="">Please Select Your City</option>
+                    <option>Pune</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="area">Area <span class="required-field">*</span></label>
+                  <select class="form-control" id="area" required="">
+                    <option disabled selected value="">Please Select Your Area</option>
+                    <option>Pune</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group reg-form">
+                  <label for="address">Address 1 <span class="required-field">*</span></label>
+                  <input type="text" class="form-control" placeholder="Enter Address First Line" id="address" required>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group reg-form">
+                  <label for="address2">Address 2</label>
+                  <input type="text" class="form-control" placeholder="Enter Address Second Line" id="address2">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="phone">Mobile No. (10 Digits Only) <span class="required-field">*</span></label>
+                  <input type="tel" class="form-control" placeholder="Enter 10 Digits Mobile Number" id="phone" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="email">Email ID <span class="required-field">*</span></label>
+                  <input type="email" class="form-control" placeholder="Enter Email Address" id="email" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="password">Password <span class="required-field">*</span></label>
+                  <input type="text" class="form-control" placeholder="Enter Password" id="password" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group reg-form">
+                  <label for="confirm-password">Confirm Password <span class="required-field">*</span></label>
+                  <input type="text" class="form-control" placeholder="Re-Enter Password" id="confirm-password" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 text-right mb-3">
+                <button type="button" class="btn btn-success w200">
+                  
+                  Register
+                </button>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <button type="button" class="btn btn-danger w200">
+                  
+                  Reset
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.register-box{
+	box-shadow: 0px 0px 10px #0000002e;
+	border-radius: 20px;
+}
+.w200{
+	width: 200px;
+}
+
+.reg-form label{
+	font-size: 14px;
+	color: #737679;
+	font-weight: bold;
+}
+.reg-form select{
+	font-size: 13px;
+	color: #737679;
+}
+.reg-form .form-control{
+	background-color: #f1f1f1;
+	border:none;
+}
+.reg-form input::-webkit-input-placeholder {
+	font-size: 13px;
+	color: #737679;
+}
+@media (max-width: 991px){
+	.text-right{
+		text-align: left !important;
+	}
+}
+.login-box{
+	box-shadow: 0px 0px 10px #0000002e;
+	border-radius: 4px;
+}
+.login.input-group-text{
+	border:none;
+	background-color:#f1f1f1;
+}
+.btn-login{
+	color: #FFF;
+	background-color: #D8001C;
+}
+.btn-login:hover{
+	color: #FFF;
+	background-color: #CA0007;
+}

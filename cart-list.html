@@ -43,98 +43,119 @@
       </div>
     </div>
   </nav>
-  <section class="py-4 bg-red filter-sticky">
+  <section class="py-2 bg-red filter-sticky">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 text-center">
-
+        <div class="col-lg-6 clr-white d-flex">
+          Subtotal : 
+          <h6 class="font-20 pl-3">&#8377; 59</h6> <span class="pl-2">(1 item )</span>
         </div>
-        <div class="col-lg-7 col-md-10 col-9">
-          <div class="input-group search-field">
-            <input class=" form-control py-2 rounded-pill mr-1 pr-5" type="search" placeholder="Search" id="search">
-            <span class="input-group-append">
-              <button class="btn rounded-pill border-0 ml-n5" type="button">
-                <i class="fa fa-search clr-red"></i>
-              </button>
-            </span>
-          </div>
-        </div>
-        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+        <div class="col-lg-6 text-right">
+          <span class="clr-white">My Cart </span>
           <img src="img/shopping-cart.svg" class="img-fluid">
           <span class='badge' id='lblCartCount'> 5 </span>
         </div>
-        <div class="col-lg-2 text-right mobile-hide">
-        </div>
       </div>
     </div>
   </section>
-  <section class="my-3">
-    <div class="container"> 
-      <div class="row border-bottom pb-2">
-        <div class="col-12 clr-grey d-flex">
-          Subtotal : 1 item 
-          <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <section class="my-5">
     <div class="container"> 
       <div class="row mt-4">
-        <div class="col-lg-4 mb-4">
-          <div class="product pt-4 pb-3">
-            <div class="row">
-              <div class="col-lg-12 col-4 text-center my-auto">
-                <a href="#myModal" data-toggle="modal">
-                  <img src="img/product1.png" class="img-fluid height-120">
-                </a>
-              </div>
-              <div class="col-lg-12 col-8 text-left">
-                <div class="row">
-                  <div class="col-lg-12 col-12">
-                    <div class="product-title px-3 my-2">
-                      Bulk Poha Jaad
-                      <div class="product-quantity">1 Kg</div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="border-0 bg-light">
+                  <div class="p-2 px-3">Product</div>
+                </th>
+                <th scope="col" class="border-0 bg-light text-center">
+                  <div class="py-2">Qty</div>
+                </th>
+                 <th scope="col" class="border-0 bg-light">
+                  <div class="py-2">Price</div>
+                </th>
+                <th scope="col" class="border-0 bg-light">
+                  <div class="py-2"></div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-bottom">
+                <th scope="row" class="border-0">
+                  <div class="p-2">
+                    <i class="fa fa-heart-o liking pr-2"></i>
+                    <img src="img/product1.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+                    <div class="ml-3 d-inline-block align-middle">
+                      <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Bulk Poha Jaad</a></p><span class="font-12 clr-grey">Grocery</span>
                     </div>
                   </div>
-                  
-                </div>
-                <div class="px-3">
-                  <span class="fa fa-star clr-red"></span>
-                  <span class="fa fa-star clr-red"></span>
-                  <span class="fa fa-star clr-red"></span>
-                  <span class="fa fa-star clr-grey"></span>
-                  <span class="fa fa-star clr-grey"></span>
-                  <span class="clr-grey pl-2 font-12">120</span><br>
-                </div>
-                <div class="col-lg-12 col-12 pt-3">
-                  <h6 class="clr-green font-20 pl-3"><sup>&#8377;</sup>59</h6>
-                  <p class="clr-red font-12 pl-3 mb-0">In Stock</p>
-                  <span class="clr-grey font-12 pl-3 ">3 (minimum order Quantity)</span><br>
-                </div>
-              </div>
-              <div class="col-12">
-
-                <div class="row mb-3 pt-3 pl-3">
-                  <div class="col-6 col-lg-8  d-flex mb-3">
-                    <a  onclick="decrement()" class="pt-2">
-                      <i class="fa fa-minus clr-grey font-20 pr-4" aria-hidden="true"></i>
-                    </a>
-                    <input type="number" id="count" class="form-control qty-count" value="1" min="1" required="">
-                    <a  onclick="increment()" class="pl-4 pt-2">
-                      <i class="fa fa-plus clr-grey font-20 " aria-hidden="true"></i>
-                    </a>
+                </th>
+                <td class="border-0 align-middle w150">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary bg-red mobpad-0" onclick="decrement('count1')" type="button"><i class="fa fa-minus clr-white"></i></button>
+                    </div>
+                    <input type="number" id="count1" class="form-control" value="1" min="1" required="">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary bg-green mobpad-0" onclick="increment('count1')" type="button"><i class="fa fa-plus clr-white"></i></button>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-12 pl-4">
-                <div class="row mb-3">
-                  <a href="#" class="red-btn ml-3">Delete</a>
-                  <a href="#" class="red-btn ml-3">Save for later</a>
-                </div>
-              </div>
-            </div>
-          </div>
+                </td>
+                <td class="border-0 align-middle">&#8377; 59</td>
+                <td class="border-0 align-middle"><a href="#"><i class="fa fa-trash"></i></a></td>
+              </tr>
+              <tr class="border-bottom">
+                <th scope="row" class="border-0">
+                  <div class="p-2">
+                    <i class="fa fa-heart liking pr-2"></i>
+                    <img src="img/product2.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+                    <div class="ml-3 d-inline-block align-middle">
+                      <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Parachute Coconut Oil 250ml</a></p><span class="font-12 clr-grey">Grocery</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="border-0 align-middle w150">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary bg-red mobpad-0" onclick="decrement('count2')" type="button"><i class="fa fa-minus clr-white"></i></button>
+                    </div>
+                    <input type="number" id="count2" class="form-control" value="1" min="1" required="">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary bg-green mobpad-0" onclick="increment('count2')" type="button"><i class="fa fa-plus clr-white"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td class="border-0 align-middle">&#8377; 59</td>
+                <td class="border-0 align-middle"><a href="#"><i class="fa fa-trash"></i></a></td>
+              </tr>
+              <tr class="border-bottom">
+                <th scope="row" class="border-0">
+                  <div class="p-2">
+                    <i class="fa fa-heart-o liking pr-2"></i>
+                    <img src="img/product3.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+                    <div class="ml-3 d-inline-block align-middle">
+                      <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Plain pista iCE-cream 1000ml</a></p><span class="font-12 clr-grey">Grocery</span>
+                    </div>
+                  </div>
+                </th>
+                <td class="border-0 align-middle w150">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary bg-red mobpad-0" onclick="decrement('count3')" type="button"><i class="fa fa-minus clr-white"></i></button>
+                    </div>
+                    <input type="number" id="count3" class="form-control" value="1" min="1" required="">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary bg-green mobpad-0" onclick="increment('count3')" type="button"><i class="fa fa-plus clr-white"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <td class="border-0 align-middle">&#8377; 59</td>
+                <td class="border-0 align-middle"><a href="#"><i class="fa fa-trash"></i></a></td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
         <div class="col-12 text-right">
           <a href="address-book.html" class="btn green-add-cart">Proceed To Buy</a>
@@ -155,11 +176,11 @@
     });
   </script>
   <script>
-    function increment() {
-      document.getElementById("count").stepUp(1);
+    function increment(id) {
+      document.getElementById(id).stepUp(1);
     }
-    function decrement() {
-      document.getElementById("count").stepDown(1);
+    function decrement(id) {
+      document.getElementById(id).stepDown(1);
     }
   </script>
 </body>

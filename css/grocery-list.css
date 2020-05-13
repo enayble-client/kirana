@@ -381,3 +381,40 @@ input[type=number] {
 	color:#FFF;
 	font-size: 12px;
 }
+.btn-outline-secondary{
+	border-color: #d1d4d6;
+}
+
+.bg-green.btn-outline-secondary,.bg-green.btn-outline-secondary:hover{
+	background-color: #00D85C;
+	border-radius: 2px;
+	color: #fff;
+	border-color: #00D85C;
+}
+.bg-red.btn-outline-secondary,.bg-red.btn-outline-secondary:hover{
+	background-color: #D8001C;
+	color: #fff;
+	border-radius: 2px;
+	border-color: #D8001C;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle{
+	color: #fff;
+	background-color: transparent;
+	border-color: #d1d4d6;
+
+}
+.btn-outline-secondary.focus, .btn-outline-secondary:focus {
+	box-shadow: none;
+}
+.h45{
+	height: 45px;
+}
+.w150{
+	width: 150px;
+}
+.mobpad-0{
+	padding: 0px 10px;
+}
+.liking{
+	color: #D8001C;
+}
