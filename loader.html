@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Home Page | Kirana</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<body>
+  <section class="mt-5 pt-5"> 
+    <div class="container mt-5 pt-5">
+      <div class="col-12 pt-5 mt-5 m-auto text-center">
+        <img src="img/logo.png" class="img-fluid mb-5 pb-5">
+        <div class="progress progress-custom mt-5">
+          <div class="progress-bar bg-danger" style="width:20%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script type="text/javascript">
+    $('.progress-bar').delay(1000).queue(function () {
+      $(this).css('width', '100%')
+    });
+
+    window.setTimeout(function(){
+      window.location.href = "index.html";
+    }, 1500);
+  </script>
+</body>
+</html>

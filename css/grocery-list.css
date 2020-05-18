@@ -259,6 +259,13 @@ sup {
 		font-size: 20px;
 		font-weight: bold;
 	}
+	.orange-add-cart{
+		background-color: #ff7600;
+		color: #FFF;
+		width: 100%;
+		font-size: 20px;
+		font-weight: bold;
+	}
 	.mtmin23{
 		margin-top: -23px;
 	}
@@ -297,6 +304,14 @@ sup {
 }
 .green-add-cart:hover{
 	background-color: #00E235;
+	color: #FFF;
+}
+.orange-add-cart{
+	background-color: #ff7600;
+	color: #FFF;
+}
+.orange-add-cart:hover{
+	background-color: #ff7600;
 	color: #FFF;
 }
 
@@ -417,4 +432,14 @@ input[type=number] {
 }
 .liking{
 	color: #D8001C;
+}
+
+.hr{
+	border:1px solid;
+}
+
+.my-order{
+	box-shadow: 0px 0px 10px #0000002e;
+	border-left: 5px solid #D8001C;
+	border-radius: 5px;
 }

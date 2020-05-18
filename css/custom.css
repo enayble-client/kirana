@@ -54,6 +54,9 @@ h1,h2,h3,h4,h5,h6{
 .bg-green{
   background-color: #00D85C;
 }
+.bg-grey{
+  background-color:#dad8d8;
+}
 .pt100{
   padding-top: 100px;
 }
@@ -101,7 +104,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -127,7 +130,7 @@ img::-moz-selection {
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1em 2.5em !important;
+    padding: 1em 1em !important;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
@@ -139,7 +142,36 @@ img::-moz-selection {
     padding: 12px 0;
   }
 }
+.desktop-hide{
+  display: none;
+}
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0px;
+    left: -1px;
+    width: 80%;
+    transition: all 0.5s;
+    display: block;
+    background-color: #FFF;
+    z-index: 9999;
+  }
+  .navbar-collapse.collapsing {
+    height: auto !important;
+    margin-right: 50%;
+    transition: all 0.5s;
+    display: block;
+  }
+  .desktop-hide{
+    display: block;
+  }
+
+  .navbar-collapse {
+    height: 110vh; 
+    max-height: 120vh!important;
+  }
+}
 .required-field{
   color: red;
 }
@@ -149,6 +181,9 @@ img::-moz-selection {
   }
   .mobile-hide{
     display: none;
+  }
+  .mobile-right{
+    text-align: right !important;
   }
 }
 
@@ -181,4 +216,42 @@ img::-moz-selection {
   position: sticky;
   top: 0;
   z-index: 5;
+}
+
+.progress-custom{
+  height: 5px;
+}
+.h50{
+  height: 50px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #D8001C;
+}
+.bottom-45{
+  bottom: -45px;
+}
+
+.drp-link .dropdown-menu{
+  border:none;
+}
+
+.drp-link .dropdown-item:focus, .dropdown-item:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #d93d2b;
+}
+.drp-link .dropdown-item{
+  font-size: 12px;
+  font-weight: bold;
+  color: #6d6b6b;
+}
+.hr{
+  border:1px solid;
+}
+.fixedPosition{
+  position: fixed;
 }

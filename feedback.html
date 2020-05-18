@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Home Page | Kirana</title>
+  <title>Cart List Page | Kirana</title>
   <link rel="icon" type="image/png" href="img/logo.png">
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="css/custom.css" rel="stylesheet">
-  <link href="css/home.css" rel="stylesheet">
+  <link href="css/customer-register.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </head>
@@ -85,7 +85,6 @@
       </div>
     </div>
   </nav>
-
   <section class="py-2 bg-red filter-sticky">
     <div class="container">
       <div class="row">
@@ -106,76 +105,61 @@
     </div>
   </section>
 
-  <!-- Desktop Banner Images -->
-  <section class="mobile-hide">
-   <div id="demo" class="carousel slide mx-auto" data-ride="carousel">
-    <ul class="carousel-indicators bottom-45">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/banner1.png" class="img-fluid">
-      </div>
-      <div class="carousel-item">
-        <img src="img/banner1.png" class="img-fluid">
-      </div>
-      <div class="carousel-item">
-        <img src="img/banner1.png" class="img-fluid">
-      </div>
+  <section class="mb-3">
+    <div class="bg-grey text-center py-3">
+      Feedback
     </div>
   </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1 col-lg-4 offset-lg-4 px-2">
+          <form>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group reg-form">
+                  <input type="text" class="form-control" placeholder="Enter Name" id="name" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group reg-form">
+                  <input type="tel" class="form-control" placeholder="Mobile Number" id="phone" required>
+                </div>
+              </div>
 
-  <section class="desktop-hide">
-   <div id="demo1" class="carousel slide mx-auto" data-ride="carousel">
-    <ul class="carousel-indicators bottom-45">
-      <li data-target="#demo1" data-slide-to="0" class="active"></li>
-      <li data-target="#demo1" data-slide-to="1"></li>
-      <li data-target="#demo1" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/mobilebanner1.png" class="img-fluid">
-      </div>
-      <div class="carousel-item">
-        <img src="img/mobilebanner1.png" class="img-fluid">
-      </div>
-      <div class="carousel-item">
-        <img src="img/mobilebanner1.png" class="img-fluid">
-      </div>
-    </div>
-  </section>
+              <div class="col-12">
+                <div class="form-group reg-form">
+                  <input type="email" class="form-control" placeholder="Enter Email Id" id="email" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group reg-form">
+                  <textarea class="form-control" placeholder="Feedback" required=""></textarea>
+                </div>
+              </div>
+              <div class="col-12">
 
-  <section class="my-5">
-    <div class="container"> 
-      <h3 class="cat-title mb-3">Categories</h3>
-      <div class="row text-center">
-        <div class="col-md-3 col-6 my-3">
-          <a href="grocery-list.html">
-            <div class="cat-box py-4">
-              <img src="img/grocery.png" class="img-fluid">
-              <div class="cat-name">Grocery</div>
+                <div class="input-group mb-3 reg-form">
+                  <input type="text" class="form-control mr-2" placeholder="Captcha Code" name="captcha">
+                  <div class="input-group-append">
+                    <img src="img/captcha.png" class="img-fluid">
+                  </div>
+                </div>
+
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-md-3 col-6 my-3">
-          <div class="cat-box py-4">
-            <img src="img/oil-masala.png" class="img-fluid">
-            <div class="cat-name">Oil & Masala</div>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 my-3">
-          <div class="cat-box py-4">
-            <img src="img/packaged-foods.png" class="img-fluid">
-            <div class="cat-name">Packaged Foods</div>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 my-3">
-          <div class="cat-box py-4">
-            <img src="img/dry-foods.png" class="img-fluid">
-            <div class="cat-name">Dry Foods</div>
-          </div>
+            <div class="row">
+              <div class="col-12 text-center mb-3">
+                <button type="button" class="btn btn-feedback">
+                  SUBMIT
+                </button>
+                <div class="mt-3 font-12">
+                  <div class="my-2"><a href="#" class="feed-anc">Reset</a></div>
+                  <a href="#" class="feed-anc">Show Previous Feedback</a>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -183,5 +167,19 @@
   <script src="assets/jquery/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
+  <script type="text/javascript">
+    $(".like-product").click(function(){
+      $(this).removeClass("fa-heart-o");
+      $(this).addClass("fa-heart");
+    });
+  </script>
+  <script>
+    function increment(id) {
+      document.getElementById(id).stepUp(1);
+    }
+    function decrement(id) {
+      document.getElementById(id).stepDown(1);
+    }
+  </script>
 </body>
 </html>

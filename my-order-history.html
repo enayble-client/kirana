@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cart List Page | Kirana</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/grocery-list.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="loader.html">
+        <img src="img/logo.png" class="img-fluid logo">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="bg-red p-0 desktop-hide h50 py-2">
+          <div class="row">
+            <img src="img/avatar.png" class="rounded-circle ml-4 my-auto bg-white" alt="Cinque Terre">
+            <p class="clr-white px-3 my-auto">Hello Lorem</p>
+            <div class="mobile-right col-4 my-auto">
+              <i class="fa fa-pencil-square-o clr-white pr-2" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light py-2 desktop-hide">
+          <div class="row">
+            <div class="pl-4 ml-1">
+              Welcome
+            </div>
+            <div class="mobile-right col-7">
+              <span class="close-menu clr-red">X</span>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav ml-auto p-3">
+          <li class="nav-item">
+            <a class="nav-link" href="loader.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown drp-link">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                My Info
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="my-order-history.html">Orders</a>
+                <a class="dropdown-item" href="cart-list.html">Cart</a>
+                <a class="dropdown-item" href="address-book.html">My Addresses</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="customer-register.html">Customer Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="my-order-history.html">History </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+        <div class="px-3 desktop-hide">
+          <div class="clr-red">
+            Retailing  in the times  of <br>corona virus
+          </div>
+          <p class="font-12 mt-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="py-2 bg-red filter-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 clr-white">
+          <span class="font-12"><i class="fa fa-map-marker  pr-2" aria-hidden="true"></i>
+          Deliver to Katraj - Pune 411046</span> 
+        </div>
+        <div class="col-4 text-right">
+          <span>
+            <i class="fa fa-search clr-white font-20 pr-3"></i>
+            <a href="cart-list.html">
+              <img src="img/shopping-cart.svg" class="img-fluid">
+              <span class='badge' id='lblCartCount'> 5 </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-5">
+    <div class="bg-grey text-center py-3">
+      My Order History
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <a href="order-history.html" class="clr-grey">
+            <div class="my-order p-3">
+              <div class="row">
+                <div class="col-6 my-auto">
+                  15/05/2020
+                </div>
+                <div class="col-6 my-auto text-right mobile-right">
+                  <div class="clr-green font-20 pl-2 mt-2"><b>&#8377; 250</b></div>
+                </div>
+                <div class="col-12">
+                  <div><i class="fa fa-building pr-2 my-3"></i>Add Mart</div>
+                  <div><i class="fa fa-map-marker pr-2"></i>
+                    <span class="">Deliver to Katraj - Pune 411046</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <a href="order-history.html" class="clr-grey">
+            <div class="my-order p-3">
+              <div class="row">
+                <div class="col-6 my-auto">
+                  15/05/2020
+                </div>
+                <div class="col-6 my-auto text-right mobile-right">
+                  <div class="clr-green font-20 pl-2 mt-2"><b>&#8377; 250</b></div>
+                </div>
+                <div class="col-12">
+                  <div><i class="fa fa-building pr-2 my-3"></i>Add Mart</div>
+                  <div><i class="fa fa-map-marker pr-2"></i>
+                    <span class="">Deliver to Katraj - Pune 411046</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+         <div class="col-lg-4 mb-4">
+          <a href="order-history.html" class="clr-grey">
+            <div class="my-order p-3">
+              <div class="row">
+                <div class="col-6 my-auto">
+                  15/05/2020
+                </div>
+                <div class="col-6 my-auto text-right mobile-right">
+                  <div class="clr-green font-20 pl-2 mt-2"><b>&#8377; 250</b></div>
+                </div>
+                <div class="col-12">
+                  <div><i class="fa fa-building pr-2 my-3"></i>Add Mart</div>
+                  <div><i class="fa fa-map-marker pr-2"></i>
+                    <span class="">Deliver to Katraj - Pune 411046</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <a href="order-history.html" class="clr-grey">
+            <div class="my-order p-3">
+              <div class="row">
+                <div class="col-6 my-auto">
+                  15/05/2020
+                </div>
+                <div class="col-6 my-auto text-right mobile-right">
+                  <div class="clr-green font-20 pl-2 mt-2"><b>&#8377; 250</b></div>
+                </div>
+                <div class="col-12">
+                  <div><i class="fa fa-building pr-2 my-3"></i>Add Mart</div>
+                  <div><i class="fa fa-map-marker pr-2"></i>
+                    <span class="">Deliver to Katraj - Pune 411046</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+         <div class="col-lg-4 mb-4">
+          <a href="order-history.html" class="clr-grey">
+            <div class="my-order p-3">
+              <div class="row">
+                <div class="col-6 my-auto">
+                  15/05/2020
+                </div>
+                <div class="col-6 my-auto text-right mobile-right">
+                  <div class="clr-green font-20 pl-2 mt-2"><b>&#8377; 250</b></div>
+                </div>
+                <div class="col-12">
+                  <div><i class="fa fa-building pr-2 my-3"></i>Add Mart</div>
+                  <div><i class="fa fa-map-marker pr-2"></i>
+                    <span class="">Deliver to Katraj - Pune 411046</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <a href="order-history.html" class="clr-grey">
+            <div class="my-order p-3">
+              <div class="row">
+                <div class="col-6 my-auto">
+                  15/05/2020
+                </div>
+                <div class="col-6 my-auto text-right mobile-right">
+                  <div class="clr-green font-20 pl-2 mt-2"><b>&#8377; 250</b></div>
+                </div>
+                <div class="col-12">
+                  <div><i class="fa fa-building pr-2 my-3"></i>Add Mart</div>
+                  <div><i class="fa fa-map-marker pr-2"></i>
+                    <span class="">Deliver to Katraj - Pune 411046</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script src="assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script type="text/javascript">
+    $(".like-product").click(function(){
+      $(this).removeClass("fa-heart-o");
+      $(this).addClass("fa-heart");
+    });
+  </script>
+  <script>
+    function increment(id) {
+      document.getElementById(id).stepUp(1);
+    }
+    function decrement(id) {
+      document.getElementById(id).stepDown(1);
+    }
+  </script>
+</body>
+</html>

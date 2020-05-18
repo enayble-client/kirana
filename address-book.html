@@ -13,144 +13,178 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </head>
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" class="img-fluid logo">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop Now</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Profile </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Feedback</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Logout</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="py-4 bg-red filter-sticky">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 text-center">
-
-        </div>
-        <div class="col-lg-7 col-md-10 col-9">
-          <div class="input-group search-field">
-            <input class=" form-control py-2 rounded-pill mr-1 pr-5" type="search" placeholder="Search" id="search">
-            <span class="input-group-append">
-              <button class="btn rounded-pill border-0 ml-n5" type="button">
-                <i class="fa fa-search clr-red"></i>
-              </button>
-            </span>
+ <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="loader.html">
+      <img src="img/logo.png" class="img-fluid logo">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="bg-red p-0 desktop-hide h50 py-2">
+        <div class="row">
+          <img src="img/avatar.png" class="rounded-circle ml-4 my-auto bg-white" alt="Cinque Terre">
+          <p class="clr-white px-3 my-auto">Hello Lorem</p>
+          <div class="mobile-right col-4 my-auto">
+            <i class="fa fa-pencil-square-o clr-white pr-2" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+      </div>
+      <div class="bg-light py-2 desktop-hide">
+        <div class="row">
+          <div class="pl-4 ml-1">
+            Welcome
+          </div>
+          <div class="mobile-right col-7">
+            <span class="close-menu clr-red">X</span>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav ml-auto p-3">
+        <li class="nav-item">
+          <a class="nav-link" href="loader.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown drp-link">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              My Info
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="my-order-history.html">Orders</a>
+              <a class="dropdown-item" href="cart-list.html">Cart</a>
+              <a class="dropdown-item" href="address-book.html">My Addresses</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="customer-register.html">Customer Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my-order-history.html">History </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+      <div class="px-3 desktop-hide">
+        <div class="clr-red">
+          Retailing  in the times  of <br>corona virus
+        </div>
+        <p class="font-12 mt-3">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        </p>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="py-2 bg-red filter-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 clr-white">
+       
+      </div>
+      <div class="col-4 text-right">
+        <span>
+          <i class="fa fa-search clr-white font-20 pr-3"></i>
           <a href="cart-list.html">
             <img src="img/shopping-cart.svg" class="img-fluid">
-            <!-- <i class="fa fa-shopping-cart clr-white font-24"></i> -->
             <span class='badge' id='lblCartCount'> 5 </span>
           </a>
-        </div>
+        </span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
-  <section class="my-5">
-    <div class="container"> 
-      <div class="row">
-        <div class="col-12">
-          <div class="address-box p-3">
-            <div class="row">
-              <div class="col-12 col-md-6 px-5">
-                <div class="custom-control custom-radio">
-                  <input type="radio" class="custom-control-input " id="recent-address" name="example1" checked="">
-                  <label class="custom-control-label pl-4" for="recent-address">
-                    <h6 class="clr-grey text-uppercase">Resently Used</h6>
-                    <h5 class="clr-red">Lorem Ipsum</h5>
-                    <p class="clr-grey">
-                      Lorem Ipsum, <br>
-                      Lorem Ipsum Lorem Ipsum <br>
-                      Lorem Ipsum Lorem <br>
-                      pune 411048
-                    </p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <a href="#" class="btn btn-lg mb-3 btn-address">Deliver to this Address</a>
-                <a href="#" class="btn btn-lg mb-3 btn-editaddress">Edit Address</a>
-                <a href="#" class="btn btn-lg mb-3 btn-editaddress">Add Deliver Instruction</a>
-
-              </div> 
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-md-6 col-12 mb-5">
-          <div class="address-box p-3">
-            <div class="row">
-              <div class="col-12 px-5">
-                <div class="custom-control custom-radio">
-                  <input type="radio" class="custom-control-input " id="address-one" name="address" checked="">
-                  <label class="custom-control-label pl-4" for="address-one">
-                    <h5 class="clr-red">Lorem Ipsum</h5>
-                    <p class="clr-grey">
-                      Lorem Ipsum, <br>
-                      Lorem Ipsum Lorem Ipsum <br>
-                      Lorem Ipsum Lorem <br>
-                      pune 411048
-                    </p>
-                  </label>
-                </div>
+<section class="my-5">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-12">
+        <div class="address-box p-3">
+          <div class="row">
+            <div class="col-12 col-md-6 px-5">
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input " id="recent-address" name="example1" checked="">
+                <label class="custom-control-label pl-4" for="recent-address">
+                  <h6 class="clr-grey text-uppercase">Resently Used</h6>
+                  <h5 class="clr-red">Lorem Ipsum</h5>
+                  <p class="clr-grey">
+                    Lorem Ipsum, <br>
+                    Lorem Ipsum Lorem Ipsum <br>
+                    Lorem Ipsum Lorem <br>
+                    pune 411048
+                  </p>
+                </label>
               </div>
             </div>
-          </div>
-        </div>
+            <div class="col-12 col-md-6">
+              <a href="#" class="btn btn-lg mb-3 btn-address">Deliver to this Address</a>
+              <a href="#" class="btn btn-lg mb-3 btn-editaddress">Edit Address</a>
+              <a href="#" class="btn btn-lg mb-3 btn-editaddress">Add Deliver Instruction</a>
 
-        <div class="col-md-6 col-12 mb-5">
-          <div class="address-box p-3">
-            <div class="row">
-              <div class="col-12 px-5">
-                <div class="custom-control custom-radio">
-                  <input type="radio" class="custom-control-input " id="address-second" name="address">
-                  <label class="custom-control-label pl-4" for="address-second">
-                    <h5 class="clr-red">Lorem Ipsum</h5>
-                    <p class="clr-grey">
-                      Lorem Ipsum, <br>
-                      Lorem Ipsum Lorem Ipsum <br>
-                      Lorem Ipsum Lorem <br>
-                      pune 411048
-                    </p>
-                  </label>
-                </div>
-              </div>
-            </div>
+            </div> 
+
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <script src="assets/jquery/jquery.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script>
+
+    <div class="row mt-5">
+      <div class="col-md-6 col-12 mb-5">
+        <div class="address-box p-3">
+          <div class="row">
+            <div class="col-12 px-5">
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input " id="address-one" name="address" checked="">
+                <label class="custom-control-label pl-4" for="address-one">
+                  <h5 class="clr-red">Lorem Ipsum</h5>
+                  <p class="clr-grey">
+                    Lorem Ipsum, <br>
+                    Lorem Ipsum Lorem Ipsum <br>
+                    Lorem Ipsum Lorem <br>
+                    pune 411048
+                  </p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 mb-5">
+        <div class="address-box p-3">
+          <div class="row">
+            <div class="col-12 px-5">
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input " id="address-second" name="address">
+                <label class="custom-control-label pl-4" for="address-second">
+                  <h5 class="clr-red">Lorem Ipsum</h5>
+                  <p class="clr-grey">
+                    Lorem Ipsum, <br>
+                    Lorem Ipsum Lorem Ipsum <br>
+                    Lorem Ipsum Lorem <br>
+                    pune 411048
+                  </p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

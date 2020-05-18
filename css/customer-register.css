@@ -19,13 +19,41 @@
 	background-color: #f1f1f1;
 	border:none;
 }
-.reg-form input::-webkit-input-placeholder {
+.reg-form ::-webkit-input-placeholder {
 	font-size: 13px;
 	color: #737679;
+}
+.reg-form  :-moz-placeholder { 
+	font-size: 13px;
+	color: #737679;
+}
+
+.reg-form  ::-moz-placeholder { 
+	font-size: 13px;
+	color: #737679; 
 }
 @media (max-width: 991px){
 	.text-right{
 		text-align: left !important;
+	}
+	.reg-form label {
+		font-size: 10px;
+	}
+	.reg-form ::-webkit-input-placeholder {
+		font-size: 10px;
+	}
+	.reg-form  :-moz-placeholder { 
+		font-size: 10px;
+	}
+
+	.reg-form  ::-moz-placeholder { 
+		font-size: 10px;
+	}
+	.w200{
+		width: 120px;
+	}
+	.mob-font{
+		font-size: 20px;
 	}
 }
 .login-box{
@@ -43,4 +71,14 @@
 .btn-login:hover{
 	color: #FFF;
 	background-color: #CA0007;
+	font-weight: bold;
+}
+
+.btn-feedback,.btn-feedback:hover{
+	color: #FFF;
+	background-color: #D8001C;
+	font-weight: bold;
+}
+.feed-anc:hover{
+	font-weight: bold;
 }

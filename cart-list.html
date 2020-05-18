@@ -13,85 +13,135 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </head>
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" class="img-fluid logo">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop Now</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Profile </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Feedback</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Logout</a>
-          </li>
-        </ul>
+ <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="loader.html">
+      <img src="img/logo.png" class="img-fluid logo">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="bg-red p-0 desktop-hide h50 py-2">
+        <div class="row">
+          <img src="img/avatar.png" class="rounded-circle ml-4 my-auto bg-white" alt="Cinque Terre">
+          <p class="clr-white px-3 my-auto">Hello Lorem</p>
+          <div class="mobile-right col-4 my-auto">
+            <i class="fa fa-pencil-square-o clr-white pr-2" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bg-light py-2 desktop-hide">
+        <div class="row">
+          <div class="pl-4 ml-1">
+            Welcome
+          </div>
+          <div class="mobile-right col-7">
+            <span class="close-menu clr-red">X</span>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav ml-auto p-3">
+        <li class="nav-item">
+          <a class="nav-link" href="loader.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown drp-link">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              My Info
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="my-order-history.html">Orders</a>
+              <a class="dropdown-item" href="cart-list.html">Cart</a>
+              <a class="dropdown-item" href="address-book.html">My Addresses</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="customer-register.html">Customer Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my-order-history.html">History </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+      <div class="px-3 desktop-hide">
+        <div class="clr-red">
+          Retailing  in the times  of <br>corona virus
+        </div>
+        <p class="font-12 mt-3">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        </p>
       </div>
     </div>
-  </nav>
-  <section class="py-2 bg-red filter-sticky">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 clr-white d-flex">
-          Subtotal : 
-          <h6 class="font-20 pl-3">&#8377; 59</h6> <span class="pl-2">(1 item )</span>
-        </div>
-        <div class="col-lg-6 text-right">
-          <span class="clr-white">My Cart </span>
+  </div>
+</nav>
+<section class="py-2 bg-red filter-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 clr-white">
+        <span class="font-12"><i class="fa fa-map-marker  pr-2" aria-hidden="true"></i>
+        Deliver to Katraj - Pune 411046</span> 
+      </div>
+      <div class="col-4 text-right">
+        <span>
+          <i class="fa fa-search clr-white font-20 pr-3"></i>
           <img src="img/shopping-cart.svg" class="img-fluid">
           <span class='badge' id='lblCartCount'> 5 </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="container"> 
+    <div class="row ">
+      <div class="col-12 border-bottom">
+        <div class="py-3 my-auto clr-grey">
+          Subtotal : 1 item <span class="clr-green font-20 pl-2">&#8377; 159</span>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="my-5">
-    <div class="container"> 
-      <div class="row mt-4">
-        <div class="table-responsive">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col" class="border-0 bg-light">
-                  <div class="p-2 px-3">Product</div>
-                </th>
-                <th scope="col" class="border-0 bg-light text-center">
-                  <div class="py-2">Qty</div>
-                </th>
-                 <th scope="col" class="border-0 bg-light">
-                  <div class="py-2">Price</div>
-                </th>
-                <th scope="col" class="border-0 bg-light">
-                  <div class="py-2"></div>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-bottom">
-                <th scope="row" class="border-0">
-                  <div class="p-2">
-                    <i class="fa fa-heart-o liking pr-2"></i>
-                    <img src="img/product1.png" alt="" width="70" class="img-fluid rounded shadow-sm">
-                    <div class="ml-3 d-inline-block align-middle">
-                      <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Bulk Poha Jaad</a></p><span class="font-12 clr-grey">Grocery</span>
-                    </div>
+    <div class="col-12">
+      <div class="row mt-3 pb-3 border-bottom">
+        <div class="p-2 col-3">
+          <img src="img/product1.png" alt="" class="img-fluid height-120">
+        </div>
+        <div class="col-9 my-auto">
+          <div class="row">
+            <div class="col-lg-8 my-auto">
+              <div class="row">
+                <div class="col-lg-4 my-auto">
+                  <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Bulk Poha Jaad</a></p>
+                </div>
+                <div class="col-lg-4 my-auto">
+                  <div class="mobilehp pl-3 font-12 pt-1">
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-grey"></span>
+                    <span class="fa fa-star clr-grey"></span>
+                    <span class="clr-grey pl-2 font-12">120</span>
                   </div>
-                </th>
-                <td class="border-0 align-middle w150">
+                </div>
+                <div class="col-lg-4 my-auto">
+                  <div class="clr-green font-20 pl-2 mt-2">&#8377; 159</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row mt-3">
+                <div class="col-7">
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <button class="btn btn-outline-secondary bg-red mobpad-0" onclick="decrement('count1')" type="button"><i class="fa fa-minus clr-white"></i></button>
@@ -101,21 +151,45 @@
                       <button class="btn btn-outline-secondary bg-green mobpad-0" onclick="increment('count1')" type="button"><i class="fa fa-plus clr-white"></i></button>
                     </div>
                   </div>
-                </td>
-                <td class="border-0 align-middle">&#8377; 59</td>
-                <td class="border-0 align-middle"><a href="#"><i class="fa fa-trash"></i></a></td>
-              </tr>
-              <tr class="border-bottom">
-                <th scope="row" class="border-0">
-                  <div class="p-2">
-                    <i class="fa fa-heart liking pr-2"></i>
-                    <img src="img/product2.png" alt="" width="70" class="img-fluid rounded shadow-sm">
-                    <div class="ml-3 d-inline-block align-middle">
-                      <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Parachute Coconut Oil 250ml</a></p><span class="font-12 clr-grey">Grocery</span>
-                    </div>
+                </div>
+                <div class="col-5 text-right mobile-right my-auto">
+                  <a href="#"><i class="fa fa-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3 pb-3 border-bottom">
+        <div class="p-2 col-3">
+          <img src="img/product2.png" alt="" class="img-fluid height-120">
+        </div>
+        <div class="col-9 my-auto">
+          <div class="row">
+            <div class="col-lg-8 my-auto">
+              <div class="row">
+                <div class="col-lg-4 my-auto">
+                  <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Parachute Coconut Oil 250ml</a></p>
+                </div>
+                <div class="col-lg-4 my-auto">
+                  <div class="mobilehp pl-3 font-12 pt-1">
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-grey"></span>
+                    <span class="fa fa-star clr-grey"></span>
+                    <span class="clr-grey pl-2 font-12">120</span>
                   </div>
-                </th>
-                <td class="border-0 align-middle w150">
+                </div>
+                <div class="col-lg-4 my-auto">
+                  <div class="clr-green font-20 pl-2 mt-2">&#8377; 159</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row mt-3">
+                <div class="col-7">
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <button class="btn btn-outline-secondary bg-red mobpad-0" onclick="decrement('count2')" type="button"><i class="fa fa-minus clr-white"></i></button>
@@ -125,21 +199,44 @@
                       <button class="btn btn-outline-secondary bg-green mobpad-0" onclick="increment('count2')" type="button"><i class="fa fa-plus clr-white"></i></button>
                     </div>
                   </div>
-                </td>
-                <td class="border-0 align-middle">&#8377; 59</td>
-                <td class="border-0 align-middle"><a href="#"><i class="fa fa-trash"></i></a></td>
-              </tr>
-              <tr class="border-bottom">
-                <th scope="row" class="border-0">
-                  <div class="p-2">
-                    <i class="fa fa-heart-o liking pr-2"></i>
-                    <img src="img/product3.png" alt="" width="70" class="img-fluid rounded shadow-sm">
-                    <div class="ml-3 d-inline-block align-middle">
-                      <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Plain pista iCE-cream 1000ml</a></p><span class="font-12 clr-grey">Grocery</span>
-                    </div>
+                </div>
+                <div class="col-5 text-right mobile-right my-auto">
+                  <a href="#"><i class="fa fa-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3 pb-3 border-bottom">
+        <div class="p-2 col-3">
+          <img src="img/product3.png" alt="" class="img-fluid height-120">
+        </div>
+        <div class="col-9 my-auto">
+          <div class="row">
+            <div class="col-lg-8 my-auto">
+              <div class="row">
+                <div class="col-lg-4 my-auto">
+                  <p class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Plain pista iCE-cream 1000ml</a></p>
+                </div>
+                <div class="col-lg-4 my-auto">
+                  <div class="mobilehp pl-3 font-12 pt-1">
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-red"></span>
+                    <span class="fa fa-star clr-grey"></span>
+                    <span class="fa fa-star clr-grey"></span>
+                    <span class="clr-grey pl-2 font-12">120</span>
                   </div>
-                </th>
-                <td class="border-0 align-middle w150">
+                </div>
+                <div class="col-lg-4 my-auto">
+                  <div class="clr-green font-20 pl-2 mt-2">&#8377; 159</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row mt-3">
+                <div class="col-7">
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <button class="btn btn-outline-secondary bg-red mobpad-0" onclick="decrement('count3')" type="button"><i class="fa fa-minus clr-white"></i></button>
@@ -149,39 +246,42 @@
                       <button class="btn btn-outline-secondary bg-green mobpad-0" onclick="increment('count3')" type="button"><i class="fa fa-plus clr-white"></i></button>
                     </div>
                   </div>
-                </td>
-                <td class="border-0 align-middle">&#8377; 59</td>
-                <td class="border-0 align-middle"><a href="#"><i class="fa fa-trash"></i></a></td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-        <div class="col-12 text-right">
-          <a href="address-book.html" class="btn green-add-cart">Proceed To Buy</a>
+                </div>
+                <div class="col-5 text-right mobile-right my-auto">
+                  <a href="#"><i class="fa fa-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    
-  </div>
+      <div class="col-12 text-right mt-4">
+        <a href="address-book.html" class="btn green-add-cart">Proceed To Pay</a>
+      </div>  
+    </div>
 
-  <script src="assets/jquery/jquery.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script type="text/javascript">
-    $(".like-product").click(function(){
-      $(this).removeClass("fa-heart-o");
-      $(this).addClass("fa-heart");
-    });
-  </script>
-  <script>
-    function increment(id) {
-      document.getElementById(id).stepUp(1);
-    }
-    function decrement(id) {
-      document.getElementById(id).stepDown(1);
-    }
-  </script>
+  </section>
+
+
+</div>
+
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+  $(".like-product").click(function(){
+    $(this).removeClass("fa-heart-o");
+    $(this).addClass("fa-heart");
+  });
+</script>
+<script>
+  function increment(id) {
+    document.getElementById(id).stepUp(1);
+  }
+  function decrement(id) {
+    document.getElementById(id).stepDown(1);
+  }
+</script>
 </body>
 </html>

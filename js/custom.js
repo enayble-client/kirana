@@ -32,3 +32,19 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery);
+
+$('.close-menu').click(function() {
+  $('.navbar-collapse').collapse('hide');
+  $('body').removeClass("fixedPosition");
+});
+
+
+$('.navbar-toggler').click(function() {
+
+  if(!($("#navbarResponsive").hasClass("show"))){
+    $('body').addClass("fixedPosition");
+  }
+  else{
+    $('body').removeClass("fixedPosition");
+  }
+});
