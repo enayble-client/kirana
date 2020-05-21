@@ -24,11 +24,18 @@ h1,h2,h3,h4,h5,h6{
 .font-12{
   font-size: 12px;
 }
+.font-14{
+  font-size: 14px;
+}
 .font-20{
   font-size: 20px !important;
 }
 .font-24{
   font-size: 24px !important;
+}
+.bor-btm-red{
+  border-bottom: 2px solid #D8001C;
+  padding-bottom: 2px;
 }
 .clr-red{
   color: #D8001C;
@@ -254,4 +261,29 @@ img::-moz-selection {
 }
 .fixedPosition{
   position: fixed;
+}
+.footer-bg{
+  background-color: #EAEAEA;
+}
+.footer-text{
+  color: #5C5C5C;
+}
+.footer-heading{
+  color: #5C5C5C;
+  font-size: 16px;
+}
+.footer-link{
+  color: #848484;
+  font-size: 14px;
+}
+
+.subscribe::-webkit-input-placeholder {
+  color: #D8001C;
+}
+.subscribe:-moz-placeholder { 
+  color: #D8001C;
+}
+
+.subscribe::-moz-placeholder { 
+  color: #D8001C; 
 }
