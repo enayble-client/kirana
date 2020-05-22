@@ -255,3 +255,22 @@ img::-moz-selection {
 .fixedPosition{
   position: fixed;
 }
+
+.footer-text{
+  color:#717171;
+  font-size: 14px;
+}
+.footer-heading{
+  color:#717171;
+}
+.footer-link{
+  color:#717171;
+  font-size: 14px;
+}
+.footer-bg{
+  background-color: #e8e8e8;
+}
+.bor-btm-red{
+  border-bottom: 2px solid #D8001C;
+  padding-bottom: 3px;
+}
