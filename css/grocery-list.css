@@ -88,6 +88,13 @@ sup {
 	top: -.3em;
 }
 
+.check-out-btn, .check-out-btn:hover{
+	color: #D8001C;
+	border:1px solid #FFF;
+	background-color: #FFF;
+	border-radius: 4px;
+	z-index: 2;
+}
 
 
 .checkout-btn{
@@ -120,6 +127,8 @@ sup {
 .mobile-filter-dropdown{
 	border:none;
 	width: 100%;
+	max-height: 400px;
+	overflow: scroll;
 }
 .dropdown-menu-arrow {
 	top: -25px;
@@ -155,12 +164,13 @@ sup {
 }
 
 .filter-keywords{
-	box-shadow: 0px 0px 6px #00000029;
 	border-radius: 3px;
 	color:#a2a2a2;
+	font-size: 12px;
+	box-shadow: 0px 0px 6px #00000029;
 }
 .filter-keywords:hover{
-	background-color: #D8001C;
+	border:1px solid #656262;
 	border-radius: 3px;
 	color:#FFF;
 	font-size: 12px;
@@ -282,6 +292,14 @@ sup {
 		margin-top: 5px!important;
 		margin-bottom: 5px!important;
 	}
+	.check-out-btn, .check-out-btn:hover{
+		color: #D8001C;
+		border:1px solid #FFF;
+		background-color: #FFF;
+		border-radius: 4px;
+		z-index: 2;
+		margin-top: 5px;
+	}
 }
 .mob-filter{
 	border: 1px solid #D8001C;
@@ -299,11 +317,11 @@ sup {
 	color: #FFF;
 }
 .green-add-cart{
-	background-color: #00E235;
+	background-color: #479e3f;
 	color: #FFF;
 }
 .green-add-cart:hover{
-	background-color: #00E235;
+	background-color: #479e3f;
 	color: #FFF;
 }
 .orange-add-cart{
@@ -391,10 +409,10 @@ input[type=number] {
 }
 
 .filter-button input:checked + span {
-	background-color: #D8001C;
 	border-radius: 3px;
 	color:#FFF;
-	font-size: 12px;
+	font-size: 14px;
+	border:1px solid #656262;
 }
 .btn-outline-secondary{
 	border-color: #d1d4d6;
@@ -442,4 +460,53 @@ input[type=number] {
 	box-shadow: 0px 0px 10px #0000002e;
 	border-left: 5px solid #D8001C;
 	border-radius: 5px;
+}
+
+.filter-dropdown .custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: #d93d2b;
+	background-color: #d93d2b;
+}
+.mobile-filter-dropdown .custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: #d93d2b;
+	background-color: #d93d2b;
+}
+
+.slidecontainer {
+	width: 100%;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 15px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #4CAF50;
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #4CAF50;
+	cursor: pointer;
 }

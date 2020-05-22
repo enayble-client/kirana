@@ -48,3 +48,16 @@ $('.navbar-toggler').click(function() {
     $('body').removeClass("fixedPosition");
   }
 });
+
+
+$('#mobile-filter').click(function() {
+  $('body').addClass("fixedPosition");
+});
+
+$('.doneFiltermobile').click(function() {
+  $('body').removeClass("fixedPosition");
+});
+
+$('#product-list-data').on("click", function () {
+  $('body').removeClass("fixedPosition");
+});
