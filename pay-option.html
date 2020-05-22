@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Address Book Page | Kirana</title>
+  <title>Payment option Page | Kirana</title>
   <link rel="icon" type="image/png" href="img/logo.png">
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -119,125 +119,56 @@
 
 <section class="mb-5">
   <div class="container"> 
-    <div class="row">
-      <div class="col-12">
-        <div class="">
+    <div class="row mt-5">
+      <div class="col-md-6 col-12 mb-5">
+        <div class="pay-box p-3">
           <div class="row">
-            <div class="col-12 col-md-6 px-3">
-              <form class="bs-example" action="">
-                <div class="panel-group" id="accordion">
-                  <div class="panel panel-default border-bottom pb-1 pt-3">
-                    <div class="panel-heading">
-                      <h6 class="panel-title">
-                        <label class="custom-radio" for='r11'>
-                          <input type='radio' id='r11' name='occupation' value='Credit Card' checked="" required /> <span class="pl-4"> Credit Card</span>
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
-                          <span class="checkmark"></span>
-                        </label>
-                      </h6>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in show">
-                      <div class="panel-body pl-4">
-                        <div class="col-12">
-                          <div class="form-group reg-form">
-                            <label for="name">Card Number <span class="required-field">*</span></label>
-                            <input type="text" class="form-control" placeholder="Card Number" id="card-number" required>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-group reg-form">
-                            <label for="name">Card Holder Name <span class="required-field">*</span></label>
-                            <input type="text" class="form-control" placeholder="Card Holder Name" id="card-holder-name" required>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="row">
-                            <div class="col-7">
-                              <div class="form-group reg-form">
-                                <label for="name">Expiration Date <span class="required-field">*</span></label>
-                                <input type="date" class="form-control" id="date" required>
-                              </div>
-                            </div>
-                            <div class="col-5">
-                              <div class="form-group reg-form">
-                                <label for="name">CVV <span class="required-field">*</span></label>
-                                <input type="text" class="form-control" placeholder="CVV" id="cvv" required>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default border-bottom pb-1 pt-3">
-                    <div class="panel-heading">
-                      <h6 class=panel-title>
-                        <label class="custom-radio" for='r12'>
-                          <input type='radio' id='r12' name='occupation' value='Not-Working' required /><span class="pl-4"> Debit Card</span>
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
-                          <span class="checkmark"></span>
-                        </label>
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="panel panel-default border-bottom pb-1 pt-3">
-                    <div class="panel-heading">
-                      <h6 class=panel-title>
-                        <label class="custom-radio" for='r13'>
-                          <input type='radio' id='r13' name='occupation' value='Not-Working' required /><span class="pl-4"> Net Banking</span>
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
-                          <span class="checkmark"></span>
-                        </label>
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="panel panel-default border-bottom pb-1 pt-3">
-                    <div class="panel-heading">
-                      <h6 class=panel-title>
-                        <label class="custom-radio" for='r14'>
-                          <input type='radio' id='r14' name='occupation' value='Not-Working' required /><span class="pl-4"> Cash On Delivery</span>
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
-                          <span class="checkmark"></span>
-                        </label>
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div> 
-            <div class="col-12 text-right mt-4 mobile-center">
-              <a href="#" class="btn green-add-cart">Proceed To Next</a>
-            </div>  
+            <div class="col-12 px-5">
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input " id="address-one" name="address" checked="">
+                <label class="custom-control-label pl-4" for="address-one">
+                  <h5 class="clr-red">COD</h5>
+                  <p class="clr-grey">
+                    Cash On Delivery, <br>
+                    Time 12AM - 5PM <br> <br>
+                    <a href="#">More</a>
+                  </p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 mb-5">
+        <div class="pay-box p-3">
+          <div class="row">
+            <div class="col-12 px-5">
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input " id="address-second" name="address">
+                <label class="custom-control-label pl-4" for="address-second">
+                  <h5 class="clr-red">Online Pay (Benow)</h5>
+                  <p class="clr-grey">
+                    Pay Online <br>
+                    No Delivery available <br>
+                    Collect From Shop <br>
+                    Time 12AM - 1PM
+                  </p>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-12 text-right mt-4 mobile-center">
+      <a href="#" class="btn green-add-cart">Proceed To Next</a>
+    </div>  
   </div>
 </section>
 <script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
-<script type="text/javascript">
-  $('#r11').on('click', function(){
-    $(this).parent().find('a').trigger('click')
-  })
-
-  $('#r12').on('click', function(){
-    $(this).parent().find('a').trigger('click')
-  })
-  $('#r13').on('click', function(){
-    $(this).parent().find('a').trigger('click')
-  })
-
-  $('#r14').on('click', function(){
-    $(this).parent().find('a').trigger('click')
-  })
-
-
-  $('.panel-default>h6>a').on('click', function(){
-    $('.panel-group-collapse').collapse('hide');
-  });
-</script>
 
 </body>
 </html>

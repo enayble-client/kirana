@@ -107,54 +107,14 @@
 
 
 
-.custom-radio {
-	display: block;
-	position: relative;
-	padding-left: 16px;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+
+.pay-box{
+	box-shadow: 0px 0px 10px #0000002e;
+	min-height: 170px;
 }
 
-.custom-radio input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-}
-.checkmark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 20px;
-	width: 20px;
-	background-color: #eee;
-	border-radius: 50%;
-}
-.custom-radio:hover input ~ .checkmark {
-	background-color: #ccc;
-}
-.custom-radio input:checked ~ .checkmark {
-	border:1px solid #D8001C;
-	background-color: #FFF;
-}
-
-.checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-.custom-radio input:checked ~ .checkmark:after {
-	display: block;
-}
-
-.custom-radio .checkmark:after {
-	top: 5px;
-	left: 5px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: #D8001C;
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: #d93d2b;
+	background-color: #d93d2b;
 }
