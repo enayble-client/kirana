@@ -82,3 +82,79 @@
 .feed-anc:hover{
 	font-weight: bold;
 }
+
+.green-add-cart{
+	background-color: #00E235;
+	color: #FFF;
+}
+.green-add-cart:hover{
+	background-color: #00E235;
+	color: #FFF;
+}
+
+@media (max-width: 991px){
+	.green-add-cart{
+		background-color: #00D85C;
+		color: #FFF;
+		width: 80%;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.mobile-center{
+		text-align: center !important;
+	}
+}
+
+
+
+.custom-radio {
+	display: block;
+	position: relative;
+	padding-left: 16px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.custom-radio input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+.custom-radio:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+.custom-radio input:checked ~ .checkmark {
+	border:1px solid #D8001C;
+	background-color: #FFF;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.custom-radio input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.custom-radio .checkmark:after {
+	top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #D8001C;
+}

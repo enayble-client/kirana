@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Address Book Page | Kirana</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/customer-register.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<body id="page-top">
+ <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="loader.html">
+      <img src="img/logo.png" class="img-fluid logo">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="bg-red p-0 desktop-hide h50 py-2">
+        <div class="row">
+          <img src="img/avatar.png" class="rounded-circle ml-4 my-auto bg-white" alt="Cinque Terre">
+          <p class="clr-white px-3 my-auto">Hello Lorem</p>
+          <div class="mobile-right col-4 my-auto">
+            <i class="fa fa-pencil-square-o clr-white pr-2" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bg-light py-2 desktop-hide">
+        <div class="row">
+          <div class="pl-4 ml-1">
+            Welcome
+          </div>
+          <div class="mobile-right col-7">
+            <span class="close-menu clr-red">X</span>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav ml-auto p-3">
+        <li class="nav-item">
+          <a class="nav-link" href="loader.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown drp-link">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              My Info
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="my-order-history.html">Orders</a>
+              <a class="dropdown-item" href="cart-list.html">Cart</a>
+              <a class="dropdown-item" href="address-book.html">My Addresses</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="customer-register.html">Customer Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my-order-history.html">History </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+      <div class="px-3 desktop-hide">
+        <div class="clr-red">
+          Retailing  in the times  of <br>corona virus
+        </div>
+        <p class="font-12 mt-3">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        </p>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="py-2 bg-red filter-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 clr-white">
+
+      </div>
+      <div class="col-4 text-right">
+        <span>
+          <i class="fa fa-search clr-white font-20 pr-3"></i>
+          <a href="cart-list.html">
+            <img src="img/shopping-cart.svg" class="img-fluid">
+            <span class='badge' id='lblCartCount'> 5 </span>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mb-3">
+  <div class="bg-grey text-center py-3">
+    <b>Enter Payment Details</b>
+  </div>
+  <div class="container">
+    <div class="col-12 border-bottom">
+      <div class="py-3 my-auto clr-grey">
+        Subtotal : 1 item <span class="clr-green font-20 pl-4">&#8377; 159</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-12">
+        <div class="">
+          <div class="row">
+            <div class="col-12 col-md-6 px-3">
+              <form class="bs-example" action="">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default border-bottom pb-1 pt-3">
+                    <div class="panel-heading">
+                      <h6 class="panel-title">
+                        <label class="custom-radio" for='r11'>
+                          <input type='radio' id='r11' name='occupation' value='Credit Card' checked="" required /> <span class="pl-4"> Credit Card</span>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
+                          <span class="checkmark"></span>
+                        </label>
+                      </h6>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in show">
+                      <div class="panel-body pl-4">
+                        <div class="col-12">
+                          <div class="form-group reg-form">
+                            <label for="name">Card Number <span class="required-field">*</span></label>
+                            <input type="text" class="form-control" placeholder="Card Number" id="card-number" required>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group reg-form">
+                            <label for="name">Card Holder Name <span class="required-field">*</span></label>
+                            <input type="text" class="form-control" placeholder="Card Holder Name" id="card-holder-name" required>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row">
+                            <div class="col-7">
+                              <div class="form-group reg-form">
+                                <label for="name">Expiration Date <span class="required-field">*</span></label>
+                                <input type="date" class="form-control" id="date" required>
+                              </div>
+                            </div>
+                            <div class="col-5">
+                              <div class="form-group reg-form">
+                                <label for="name">CVV <span class="required-field">*</span></label>
+                                <input type="text" class="form-control" placeholder="CVV" id="cvv" required>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default border-bottom pb-1 pt-3">
+                    <div class="panel-heading">
+                      <h6 class=panel-title>
+                        <label class="custom-radio" for='r12'>
+                          <input type='radio' id='r12' name='occupation' value='Not-Working' required /><span class="pl-4"> Debit Card</span>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
+                          <span class="checkmark"></span>
+                        </label>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="panel panel-default border-bottom pb-1 pt-3">
+                    <div class="panel-heading">
+                      <h6 class=panel-title>
+                        <label class="custom-radio" for='r13'>
+                          <input type='radio' id='r13' name='occupation' value='Not-Working' required /><span class="pl-4"> Net Banking</span>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
+                          <span class="checkmark"></span>
+                        </label>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="panel panel-default border-bottom pb-1 pt-3">
+                    <div class="panel-heading">
+                      <h6 class=panel-title>
+                        <label class="custom-radio" for='r14'>
+                          <input type='radio' id='r14' name='occupation' value='Not-Working' required /><span class="pl-4"> Cash On Delivery</span>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
+                          <span class="checkmark"></span>
+                        </label>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div> 
+            <div class="col-12 text-right mt-4 mobile-center">
+              <a href="#" class="btn green-add-cart">Proceed To Next</a>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+  $('#r11').on('click', function(){
+    $(this).parent().find('a').trigger('click')
+  })
+
+  $('#r12').on('click', function(){
+    $(this).parent().find('a').trigger('click')
+  })
+  $('#r13').on('click', function(){
+    $(this).parent().find('a').trigger('click')
+  })
+
+  $('#r14').on('click', function(){
+    $(this).parent().find('a').trigger('click')
+  })
+
+
+  $('.panel-default>h6>a').on('click', function(){
+    $('.panel-group-collapse').collapse('hide');
+  });
+</script>
+
+</body>
+</html>
