@@ -85,20 +85,18 @@
       </div>
     </div>
   </nav>
-  <section class="py-4 bg-red filter-sticky">
+  <section class="py-4 bg-red filter-sticky dropdown">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 text-center cursor">
+        <div class="col-lg-2">
 
         </div>
         <div class="col-lg-7 col-md-10 col-9 zindex">
           <div class="input-group search-field">
-            <input class=" form-control py-2 rounded-pill mr-1 pr-3" type="search" placeholder="Search" id="search">
-            <span class="input-group-append">
-              <button class="btn rounded-pill border-0 ml-n5" type="button">
-                <i class="fa fa-search clr-red"></i>
-              </button>
-            </span>
+            <input type="search" class="form-control" placeholder="Search">
+            <div class="input-group-append ">
+              <button class="btn btn-newfilter" > <i class="fa fa-filter clr-red"></i></button>
+            </div>
           </div>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-2 col-3 zindex">
@@ -107,121 +105,216 @@
             <span class='badge' id='lblCartCount'> 5 </span>
           </a>
         </div>
-        <div class="col-lg-2 mobile-hide zindex">
-          <a href="cart-list.html" class="btn checkout-btn px-3">Check Out</a>
+      </div>
+    </div>
+    <div>
+      <div class="dropdown-menu filter-dropdown" id="filt-drp">
+        <div class="col-lg-12 pl-5 py-2 sticky-top bg-white">
+          <button type="button" id="doneFilter" class="btn btn-done">Done</button>
         </div>
-        <div class="col-lg-12 mtmin32 pl-5 mobile-hide">
-          <div class="dropdown pl-4 cursor">
-            <a class="btn-filter" data-toggle="dropdown">
-              <i class="fa fa-filter clr-red"></i>
-            </a>
-            <div class="dropdown-menu filter-dropdown">
-              <span class="dropdown-menu-arrow"></span>
-              <div class="col-lg-12 px-5 pt-4">
-                <div class="row">
-                  <div class="col-lg-6"> 
-                    <h6 class="clr-grey mb-2">Brand</h6>
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1" checked="">
-                      <label class="custom-control-label" for="customCheck1">HTC</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
-                      <label class="custom-control-label" for="customCheck2">NOKIA</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
-                      <label class="custom-control-label" for="customCheck3">SAMSUNG</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
-                      <label class="custom-control-label" for="customCheck4">MOTOG</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck5" name="example1">
-                      <label class="custom-control-label" for="customCheck5">REDMI</label>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6"> 
-                    <h6 class="clr-grey mb-2">Home Decor Theme</h6>
-                    <div class="custom-control custom-radio">
-                      <input type="radio" class="custom-control-input" id="customCheck11" name="example2">
-                      <label class="custom-control-label" for="customCheck11">Romance & Love</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                      <input type="radio" class="custom-control-input" id="customCheck12" name="example2" checked="">
-                      <label class="custom-control-label" for="customCheck12">Animal</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                      <input type="radio" class="custom-control-input" id="customCheck13" name="example2">
-                      <label class="custom-control-label" for="customCheck13">Wedding</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                      <input type="radio" class="custom-control-input" id="customCheck14" name="example2">
-                      <label class="custom-control-label" for="customCheck14">Stars</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                      <input type="radio" class="custom-control-input" id="customCheck15" name="example2">
-                      <label class="custom-control-label" for="customCheck15">Vehicles & Transpotation</label>
-                    </div>
-                  </div>
-
-                </div>
-                <hr class="hr-filter">
+        <div class="col-lg-12 mt-30"></div>
+        <div class="col-lg-12 px-5 ">
+          <div class="row">
+            <div class="col-lg-6"> 
+              <h6 class="clr-grey mb-2">Brand</h6>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1" checked="">
+                <label class="custom-control-label" for="customCheck1">HTC</label>
               </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                <label class="custom-control-label" for="customCheck2">NOKIA</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
+                <label class="custom-control-label" for="customCheck3">SAMSUNG</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
+                <label class="custom-control-label" for="customCheck4">MOTOG</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck5" name="example1">
+                <label class="custom-control-label" for="customCheck5">REDMI</label>
+              </div>
+              <hr class="hr-filter desktop-hide">
+            </div>
+            <div class="col-lg-6"> 
+              <h6 class="clr-grey mb-2">Home Decor Theme</h6>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck11" name="example2">
+                <label class="custom-control-label" for="customCheck11">Romance & Love</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck12" name="example2" checked="">
+                <label class="custom-control-label" for="customCheck12">Animal</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck13" name="example2">
+                <label class="custom-control-label" for="customCheck13">Wedding</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck14" name="example2">
+                <label class="custom-control-label" for="customCheck14">Stars</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck15" name="example2">
+                <label class="custom-control-label" for="customCheck15">Vehicles & Transpotation</label>
+              </div>
+            </div>
 
-              <div class="col-lg-12 px-5">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <h6 class="clr-grey mb-2">Price</h6>
-                    <div class="slidecontainer">
-                    <input type="range" min="100" max="1000" value="200" class="slider" id="myRange">
-                    <p class="mt-3 text-center"><span class="py-1 px-3 bg-grey mr-5">100</span> <span id="demoprice1" class="bg-grey py-1 px-3 ml-5"></span></p>
-                  </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <h6 class="clr-grey mb-2">Color</h6>
-                    <div class="row px-3">
-                      <div class="filter-button pr-3">
-                        <label>
-                          <input type="radio" value="1" name="color">
-                          <span class="btn btn-sm filter-keywords bg-red">&nbsp;&nbsp;</span>
-                        </label>
-                      </div>
+          </div>
+          <hr class="hr-filter">
+          <div class="row">
+            <div class="col-lg-6"> 
+              <h6 class="clr-grey mb-2">Brand</h6>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1" checked="">
+                <label class="custom-control-label" for="customCheck1">HTC</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                <label class="custom-control-label" for="customCheck2">NOKIA</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
+                <label class="custom-control-label" for="customCheck3">SAMSUNG</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
+                <label class="custom-control-label" for="customCheck4">MOTOG</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck5" name="example1">
+                <label class="custom-control-label" for="customCheck5">REDMI</label>
+              </div>
+              <hr class="hr-filter desktop-hide">
+            </div>
 
-                      <div class="filter-button pr-3">
-                        <label>
-                          <input type="radio" value="1" name="color">
-                          <span class="btn btn-sm filter-keywords bg-light">&nbsp;&nbsp;</span>
-                        </label>
-                      </div>
-                      <div class="filter-button pr-3">
-                        <label>
-                          <input type="radio" value="1" name="color">
-                          <span class="btn btn-sm filter-keywords bg-green">&nbsp;&nbsp;</span>
-                        </label>
-                      </div>
-                      <div class="filter-button pr-3">
-                        <label>
-                          <input type="radio" value="1" name="color">
-                          <span class="btn btn-sm filter-keywords bg-grey">&nbsp;&nbsp;</span>
-                        </label>
-                      </div>
-                      <div class="filter-button pr-3">
-                        <label>
-                          <input type="radio" value="1" name="color">
-                          <span class="btn btn-sm filter-keywords bg-white">&nbsp;&nbsp;</span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
+            <div class="col-lg-6"> 
+              <h6 class="clr-grey mb-2">Home Decor Theme</h6>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck11" name="example2">
+                <label class="custom-control-label" for="customCheck11">Romance & Love</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck12" name="example2" checked="">
+                <label class="custom-control-label" for="customCheck12">Animal</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck13" name="example2">
+                <label class="custom-control-label" for="customCheck13">Wedding</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck14" name="example2">
+                <label class="custom-control-label" for="customCheck14">Stars</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck15" name="example2">
+                <label class="custom-control-label" for="customCheck15">Vehicles & Transpotation</label>
+              </div>
+            </div>
+
+          </div>
+          <hr class="hr-filter">
+        </div>
+        <div class="col-lg-12 px-5">
+          <div class="row">
+            <div class="col-lg-6"> 
+              <h6 class="clr-grey mb-2">Brand</h6>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1" checked="">
+                <label class="custom-control-label" for="customCheck1">HTC</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                <label class="custom-control-label" for="customCheck2">NOKIA</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
+                <label class="custom-control-label" for="customCheck3">SAMSUNG</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
+                <label class="custom-control-label" for="customCheck4">MOTOG</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck5" name="example1">
+                <label class="custom-control-label" for="customCheck5">REDMI</label>
+              </div>
+              <hr class="hr-filter desktop-hide">
+            </div>
+
+            <div class="col-lg-6"> 
+              <h6 class="clr-grey mb-2">Home Decor Theme</h6>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck11" name="example2">
+                <label class="custom-control-label" for="customCheck11">Romance & Love</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck12" name="example2" checked="">
+                <label class="custom-control-label" for="customCheck12">Animal</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck13" name="example2">
+                <label class="custom-control-label" for="customCheck13">Wedding</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck14" name="example2">
+                <label class="custom-control-label" for="customCheck14">Stars</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customCheck15" name="example2">
+                <label class="custom-control-label" for="customCheck15">Vehicles & Transpotation</label>
+              </div>
+            </div>
+
+          </div>
+          <hr class="hr-filter">
+        </div>
+
+        <div class="col-lg-12 px-5">
+          <div class="row">
+            <div class="col-lg-6">
+              <h6 class="clr-grey mb-2">Price</h6>
+              <div class="slidecontainer">
+                <input type="range" min="100" max="1000" value="200" class="slider" id="myRange">
+                <p class="mt-3 text-center"><span class="py-1 px-3 bg-grey mr-5">100</span> <span id="demoprice1" class="bg-grey py-1 px-3 ml-5"></span></p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h6 class="clr-grey mb-2">Color</h6>
+              <div class="row px-3">
+                <div class="filter-button pr-3">
+                  <label>
+                    <input type="radio" value="1" name="color">
+                    <span class="btn btn-sm filter-keywords bg-red">&nbsp;&nbsp;</span>
+                  </label>
                 </div>
 
-              </div>
-              <div class="col-lg-12 pl-5 py-2">
-                <div class="row px-3">
-                  <button type="button" id="doneFilter" class="btn btn-done mb-3">Done</button>
+                <div class="filter-button pr-3">
+                  <label>
+                    <input type="radio" value="1" name="color">
+                    <span class="btn btn-sm filter-keywords bg-light">&nbsp;&nbsp;</span>
+                  </label>
+                </div>
+                <div class="filter-button pr-3">
+                  <label>
+                    <input type="radio" value="1" name="color">
+                    <span class="btn btn-sm filter-keywords bg-green">&nbsp;&nbsp;</span>
+                  </label>
+                </div>
+                <div class="filter-button pr-3">
+                  <label>
+                    <input type="radio" value="1" name="color">
+                    <span class="btn btn-sm filter-keywords bg-grey">&nbsp;&nbsp;</span>
+                  </label>
+                </div>
+                <div class="filter-button pr-3">
+                  <label>
+                    <input type="radio" value="1" name="color">
+                    <span class="btn btn-sm filter-keywords bg-white">&nbsp;&nbsp;</span>
+                  </label>
                 </div>
               </div>
             </div>
@@ -230,131 +323,405 @@
       </div>
     </div>
   </section>
-  <section class="my-2 desktop-hide">
-    <div class="container"> 
-      <div class="col-12 clr-grey">
-        39 Results
-      </div>
-      <div class="row border-bottom pb-2 mobile-right mtmin23">
-        <div class="dropdown col-12">
-          <a href="#" class="mob-filter" data-toggle="dropdown" id="mobile-filter">Filter <i class="fa fa-filter"></i> </a>
-          <div class="dropdown-menu mobile-filter-dropdown">
-            <div class="col-lg-12 px-5 pt-4">
-              <div class="">
-                <div class="col-lg-6"> 
-                  <h6 class="clr-grey mb-2">Brand</h6>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck21" name="example11" checked="">
-                    <label class="custom-control-label" for="customCheck21">HTC</label>
-                  </div>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck22" name="example11">
-                    <label class="custom-control-label" for="customCheck22">NOKIA</label>
-                  </div>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck23" name="example11">
-                    <label class="custom-control-label" for="customCheck23">SAMSUNG</label>
-                  </div>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck24" name="example11">
-                    <label class="custom-control-label" for="customCheck24">MOTOG</label>
-                  </div>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck25" name="example11">
-                    <label class="custom-control-label" for="customCheck25">REDMI</label>
-                  </div>
-                </div>
-                <hr class="hr-filter">
 
-                <div class="col-lg-6 mt-2"> 
-                  <h6 class="clr-grey mb-2">Home Decor Theme</h6>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="customCheck111" name="example22">
-                    <label class="custom-control-label" for="customCheck111">Romance & Love</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="customCheck112" name="example22" checked="">
-                    <label class="custom-control-label" for="customCheck112">Animal</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="customCheck113" name="example22">
-                    <label class="custom-control-label" for="customCheck113">Wedding</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="customCheck114" name="example22">
-                    <label class="custom-control-label" for="customCheck114">Stars</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="customCheck115" name="example22">
-                    <label class="custom-control-label" for="customCheck115">Vehicles & Transpotation</label>
-                  </div>
-                </div>
-
-              </div>
-              <hr class="hr-filter">
-            </div>
-
-            <div class="col-lg-12 px-5">
-              <div class="">
-                <div class="col-lg-6">
-                  <h6 class="clr-grey mb-2">Price</h6>
-                  <div class="slidecontainer">
-                    <input type="range" min="100" max="1000" value="200" class="slider" id="myRange2">
-                    <p class="mt-3"><span class="py-1 px-3 bg-grey">100</span> <span id="demoprice2" class="bg-grey py-1 px-3 ml-5"></span></p>
-                  </div>
-                </div>
-                <hr class="hr-filter">
-
-                <div class="col-lg-6">
-                  <h6 class="clr-grey mb-2">Color</h6>
-                  <div class="row px-3">
-                    <div class="filter-button pr-3">
-                      <label>
-                        <input type="radio" value="1" name="color">
-                        <span class="btn btn-sm filter-keywords bg-red">&nbsp;&nbsp;</span>
-                      </label>
-                    </div>
-
-                    <div class="filter-button pr-3">
-                      <label>
-                        <input type="radio" value="1" name="color">
-                        <span class="btn btn-sm filter-keywords bg-light">&nbsp;&nbsp;</span>
-                      </label>
-                    </div>
-                    <div class="filter-button pr-3">
-                      <label>
-                        <input type="radio" value="1" name="color">
-                        <span class="btn btn-sm filter-keywords bg-green">&nbsp;&nbsp;</span>
-                      </label>
-                    </div>
-                    <div class="filter-button pr-3">
-                      <label>
-                        <input type="radio" value="1" name="color">
-                        <span class="btn btn-sm filter-keywords bg-grey">&nbsp;&nbsp;</span>
-                      </label>
-                    </div>
-                    <div class="filter-button pr-3">
-                      <label>
-                        <input type="radio" value="1" name="color">
-                        <span class="btn btn-sm filter-keywords bg-white">&nbsp;&nbsp;</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-lg-12 border-bottom mobile-right">
-              <button type="button" id="doneFiltermobile" class="btn btn-done mb-3">Done</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="my-4" id="product-list-data">
     <div class="container"> 
       <h5 class="clr-red">Merchant Name</h5>
+      <div class="row">
+        <div class="col-lg-3 mb-2 desktop-padding my-3">
+          <div class="product  pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-12 col-3 text-center">
+                <a href="#myModal" data-toggle="modal">
+                  <img src="img/product1.png" class="img-fluid height-120">
+                </a>
+              </div>
+              <div class="col-lg-12 col-9 text-left">
+                <div class="row">
+                  <div class="col-lg-12 col-9">
+                    <a href="#myModal" data-toggle="modal">
+                      <div class="product-title mobilehp pl-3 pr-1 my-1">
+                        Bulk Poha Jaad Bulk Poha Jaad Bulk Poha Jaad
+                        <div class="product-quantity">1 Kg</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3 desktop-hide">
+                    <a href="#myModal" data-toggle="modal">
+                      <i class="fa fa-shopping-cart clr-grey font-20"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mobilehp pl-3">
+
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="clr-grey pl-2 font-12">120</span><br>
+                  <span class="clr-grey font-12 mobile-hide">In stock On April 30,2020</span>
+                  <hr class="p-0 mobile-hide">
+                </div>
+              </div>
+              <div class="col-lg-12 col-9 offset-lg-0 offset-3">
+                <div class="row pl-4 mobilehp">
+                  <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
+                  <span class="clr-grey font-12 pr-1">&nbsp; <del>&#8377;70</del> Save &#8377;11</span><br>
+                  <span class="clr-grey font-12 pl-2 col-12">Save 11% more with subscribe </span>
+                  <a href="#myModal" data-toggle="modal" class="btn add-cart text-right mobile-hide mt-2"> <i class="fa fa-shopping-cart"></i>
+                  Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-2 desktop-padding my-3">
+          <div class="product  pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-12 col-3 text-center">
+                <img src="img/product2.png" class="img-fluid height-120">
+              </div>
+              <div class="col-lg-12 col-9 text-left">
+                <div class="row">
+                  <div class="col-lg-12 col-9">
+                    <div class="product-title mobilehp pl-3 pr-1 my-1">
+                      Parachute Coconut Oil  
+                      <div class="product-quantity">250ml</div>
+                    </div>
+                  </div>
+                  <div class="col-3 desktop-hide">
+                    <i class="fa fa-shopping-cart clr-green font-20"></i>
+                  </div>
+                </div>
+                <div class="mobilehp pl-3">
+
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="clr-grey pl-2 font-12">120</span><br>
+                  <span class="clr-grey font-12 mobile-hide">In stock On April 30,2020</span>
+                  <hr class="p-0 mobile-hide">
+                </div>
+              </div>
+              <div class="col-lg-12 col-9 offset-lg-0 offset-3">
+                <div class="row pl-4 mobilehp">
+                  <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
+                  <span class="clr-grey font-12 pr-1">&nbsp; <del>&#8377;70</del> Save &#8377;11</span><br>
+                  <span class="clr-grey font-12 pl-2 col-12">Save 11% more with subscribe </span>
+                  <a href="javascript:void(0)" class="btn added-cart text-right mobile-hide mt-2"> <i class="fa fa-shopping-cart"></i>
+                  Added to cart</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-2 desktop-padding my-3">
+          <div class="product  pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-12 col-3 text-center">
+                <a href="#myModal" data-toggle="modal">
+                  <img src="img/product3.png" class="img-fluid height-120">
+                </a>
+              </div>
+              <div class="col-lg-12 col-9 text-left">
+                <div class="row">
+                  <div class="col-lg-12 col-9">
+                    <a href="#myModal" data-toggle="modal">
+                      <div class="product-title mobilehp pl-3 pr-1 my-1">
+                        Plain pista iCE-cream 1000ml
+                        <div class="product-quantity">1000ml</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3 desktop-hide">
+                    <a href="#myModal" data-toggle="modal">
+                      <i class="fa fa-shopping-cart clr-grey font-20"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mobilehp pl-3">
+
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="clr-grey pl-2 font-12">120</span><br>
+                  <span class="clr-grey font-12 mobile-hide">In stock On April 30,2020</span>
+                  <hr class="p-0 mobile-hide">
+                </div>
+              </div>
+              <div class="col-lg-12 col-9 offset-lg-0 offset-3">
+                <div class="row pl-4 mobilehp">
+                  <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
+                  <span class="clr-grey font-12 pr-1">&nbsp; <del>&#8377;70</del> Save &#8377;11</span><br>
+                  <span class="clr-grey font-12 pl-2 col-12">Save 11% more with subscribe </span>
+                  <a href="#myModal" data-toggle="modal" class="btn add-cart text-right mobile-hide mt-2"> <i class="fa fa-shopping-cart"></i>
+                  Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-2 desktop-padding my-3">
+          <div class="product  pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-12 col-3 text-center">
+                <a href="#myModal" data-toggle="modal">
+                  <img src="img/product4.png" class="img-fluid height-120">
+                </a>
+              </div>
+              <div class="col-lg-12 col-9 text-left">
+                <div class="row">
+                  <div class="col-lg-12 col-9">
+                    <a href="#myModal" data-toggle="modal">
+                      <div class="product-title mobilehp pl-3 pr-1 my-1">
+                        Zandu Balm 
+                        <div class="product-quantity">8Ml</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3 desktop-hide">
+                    <a href="#myModal" data-toggle="modal">
+                      <i class="fa fa-shopping-cart clr-grey font-20"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mobilehp pl-3">
+
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="clr-grey pl-2 font-12">120</span><br>
+                  <span class="clr-grey font-12 mobile-hide">In stock On April 30,2020</span>
+                  <hr class="p-0 mobile-hide">
+                </div>
+              </div>
+              <div class="col-lg-12 col-9 offset-lg-0 offset-3">
+                <div class="row pl-4 mobilehp">
+                  <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
+                  <span class="clr-grey font-12 pr-1">&nbsp; <del>&#8377;70</del> Save &#8377;11</span><br>
+                  <span class="clr-grey font-12 pl-2 col-12">Save 11% more with subscribe </span>
+                  <a href="#myModal" data-toggle="modal" class="btn add-cart text-right mobile-hide mt-2"> <i class="fa fa-shopping-cart"></i>
+                  Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-2 desktop-padding my-3">
+          <div class="product  pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-12 col-3 text-center">
+                <a href="#myModal" data-toggle="modal">
+                  <img src="img/product1.png" class="img-fluid height-120">
+                </a>
+              </div>
+              <div class="col-lg-12 col-9 text-left">
+                <div class="row">
+                  <div class="col-lg-12 col-9">
+                    <a href="#myModal" data-toggle="modal">
+                      <div class="product-title mobilehp pl-3 pr-1 my-1">
+                        Bulk Poha Jaad
+                        <div class="product-quantity">1 Kg</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3 desktop-hide">
+                    <a href="#myModal" data-toggle="modal">
+                      <i class="fa fa-shopping-cart clr-grey font-20"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mobilehp pl-3">
+
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="clr-grey pl-2 font-12">120</span><br>
+                  <span class="clr-grey font-12 mobile-hide">In stock On April 30,2020</span>
+                  <hr class="p-0 mobile-hide">
+                </div>
+              </div>
+              <div class="col-lg-12 col-9 offset-lg-0 offset-3">
+                <div class="row pl-4 mobilehp">
+                  <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
+                  <span class="clr-grey font-12 pr-1">&nbsp; <del>&#8377;70</del> Save &#8377;11</span><br>
+                  <span class="clr-grey font-12 pl-2 col-12">Save 11% more with subscribe </span>
+                  <a href="#myModal" data-toggle="modal" class="btn add-cart text-right mobile-hide mt-2"> <i class="fa fa-shopping-cart"></i>
+                  Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-2 desktop-padding my-3">
+          <div class="product  pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-12 col-3 text-center">
+                <a href="#myModal" data-toggle="modal">
+                  <img src="img/product2.png" class="img-fluid height-120">
+                </a>
+              </div>
+              <div class="col-lg-12 col-9 text-left">
+                <div class="row">
+                  <div class="col-lg-12 col-9">
+                    <a href="#myModal" data-toggle="modal">
+                      <div class="product-title mobilehp pl-3 pr-1 my-1">
+                        Parachute Coconut Oil  
+                        <div class="product-quantity">250ml</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3 desktop-hide">
+                    <a href="#myModal" data-toggle="modal">
+                      <i class="fa fa-shopping-cart clr-grey font-20"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mobilehp pl-3">
+
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="clr-grey pl-2 font-12">120</span><br>
+                  <span class="clr-grey font-12 mobile-hide">In stock On April 30,2020</span>
+                  <hr class="p-0 mobile-hide">
+                </div>
+              </div>
+              <div class="col-lg-12 col-9 offset-lg-0 offset-3">
+                <div class="row pl-4 mobilehp">
+                  <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
+                  <span class="clr-grey font-12 pr-1">&nbsp; <del>&#8377;70</del> Save &#8377;11</span><br>
+                  <span class="clr-grey font-12 pl-2 col-12">Save 11% more with subscribe </span>
+                  <a href="#myModal" data-toggle="modal" class="btn add-cart text-right mobile-hide mt-2"> <i class="fa fa-shopping-cart"></i>
+                  Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-2 desktop-padding my-3">
+          <div class="product  pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-12 col-3 text-center">
+                <a href="#myModal" data-toggle="modal">
+                  <img src="img/product3.png" class="img-fluid height-120">
+                </a>
+              </div>
+              <div class="col-lg-12 col-9 text-left">
+                <div class="row">
+                  <div class="col-lg-12 col-9">
+                    <a href="#myModal" data-toggle="modal">
+                      <div class="product-title mobilehp pl-3 pr-1 my-1">
+                        Plain pista iCE-cream 1000ml
+                        <div class="product-quantity">1000ml</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3 desktop-hide">
+                    <a href="#myModal" data-toggle="modal">
+                      <i class="fa fa-shopping-cart clr-grey font-20"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mobilehp pl-3">
+
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="clr-grey pl-2 font-12">120</span><br>
+                  <span class="clr-grey font-12 mobile-hide">In stock On April 30,2020</span>
+                  <hr class="p-0 mobile-hide">
+                </div>
+              </div>
+              <div class="col-lg-12 col-9 offset-lg-0 offset-3">
+                <div class="row pl-4 mobilehp">
+                  <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
+                  <span class="clr-grey font-12 pr-1">&nbsp; <del>&#8377;70</del> Save &#8377;11</span><br>
+                  <span class="clr-grey font-12 pl-2 col-12">Save 11% more with subscribe </span>
+                  <a href="#myModal" data-toggle="modal" class="btn add-cart text-right mobile-hide mt-2"> <i class="fa fa-shopping-cart"></i>
+                  Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-2 desktop-padding my-3">
+          <div class="product  pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-12 col-3 text-center">
+                <a href="#myModal" data-toggle="modal">
+                  <img src="img/product4.png" class="img-fluid height-120">
+                </a>
+              </div>
+              <div class="col-lg-12 col-9 text-left">
+                <div class="row">
+                  <div class="col-lg-12 col-9">
+                    <a href="#myModal" data-toggle="modal">
+                      <div class="product-title mobilehp pl-3 pr-1 my-1">
+                        Zandu Balm 
+                        <div class="product-quantity">8Ml</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3 desktop-hide">
+                    <a href="#myModal" data-toggle="modal">
+                      <i class="fa fa-shopping-cart clr-grey font-20"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mobilehp pl-3">
+
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-red"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="fa fa-star clr-grey"></span>
+                  <span class="clr-grey pl-2 font-12">120</span><br>
+                  <span class="clr-grey font-12 mobile-hide">In stock On April 30,2020</span>
+                  <hr class="p-0 mobile-hide">
+                </div>
+              </div>
+              <div class="col-lg-12 col-9 offset-lg-0 offset-3">
+                <div class="row pl-4 mobilehp">
+                  <h6 class="clr-green font-20 pl-2"><sup>&#8377;</sup>59</h6>
+                  <span class="clr-grey font-12 pr-1">&nbsp; <del>&#8377;70</del> Save &#8377;11</span><br>
+                  <span class="clr-grey font-12 pl-2 col-12">Save 11% more with subscribe </span>
+                  <a href="#myModal" data-toggle="modal" class="btn add-cart text-right mobile-hide mt-2"> <i class="fa fa-shopping-cart"></i>
+                  Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-3 mb-2 desktop-padding my-3">
           <div class="product  pt-2 pb-2">
@@ -920,13 +1287,27 @@
     output.innerHTML = this.value;
   }
 
-  var slider2 = document.getElementById("myRange2");
+  /*var slider2 = document.getElementById("myRange2");
   var output2 = document.getElementById("demoprice2");
   output.innerHTML = slider2.value;
 
   slider2.oninput = function() {
     output2.innerHTML = this.value;
-  }
+  }*/
+
+
+  $('.btn-newfilter').click(function() {
+    if ($('#filt-drp').hasClass("show")) {
+      $('#filt-drp').removeClass("show");
+    }else{
+      $(document).scrollTop(100);
+      $('#filt-drp').addClass("show");
+    }
+  });
+
+  $('#doneFilter').click(function() {
+    $('#filt-drp').removeClass("show");
+  });
 </script>
 </body>
 </html>
